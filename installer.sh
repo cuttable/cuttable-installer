@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-RUN_SCRIPT_URL="https://raw.githubusercontent.com/cuttable/cuttable-installer/create-installer/run"
+RUN_SCRIPT_URL="https://raw.githubusercontent.com/cuttable/cuttable-installer/main/run"
 CUTTA_DIR="$HOME/.cutta"
 
 # Create installer folder
