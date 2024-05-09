@@ -13,7 +13,8 @@ fi
 
 echo "🧹 Cleaning cuttable extension..."
 set +e
-"$UPIA_BIN" --remove com.cuttable.extension
+"$UPIA_BIN" --remove "Cuttable Extension" # This is the old name
+"$UPIA_BIN" --remove "cuttable"
 set -e
 
 echo "Installing cuttable extension..."
