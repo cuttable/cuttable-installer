@@ -19,4 +19,4 @@ mkdir -p "$CUTTA_DIR"
 echo "🛜 Downloading installer..."
 curl -s --create-dirs -O --output-dir "$CUTTA_DIR" $RUN_SCRIPT_URL
 
-chmod +x "$CUTTA_DIR/run.sh"
+chmod +x "$CUTTA_DIR/run"
