@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-RUN_SCRIPT_URL="https://raw.githubusercontent.com/cuttable/cuttable-installer/create-installer/run.sh"
+RUN_SCRIPT_URL="https://raw.githubusercontent.com/cuttable/cuttable-installer/create-installer/run"
 CUTTA_DIR="$HOME/.cutta"
 
 # Get the system's temporary directory on macOS
