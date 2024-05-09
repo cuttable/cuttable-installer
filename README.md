@@ -3,7 +3,7 @@
 ### Download installer
 
 ```sh
-curl -L https://s.cuttable.dev | bash
+curl -s -L https://s.cuttable.dev | bash
 ```
 
 ### Download latest extension and save it in the `Downloads` folder
