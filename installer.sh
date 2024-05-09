@@ -18,3 +18,5 @@ rm -rf "$CUTTA_DIR"
 mkdir -p "$CUTTA_DIR"
 
 curl --create-dirs -O --output-dir "$CUTTA_DIR/run.sh" $RUN_SCRIPT_URL
+
+chmod +x "$CUTTA_DIR/run.sh"
