@@ -1,0 +1,23 @@
+repository:
+  topics: settings
+  allow_squash_merge: true
+  allow_merge_commit: false
+  allow_rebase_merge: false
+
+labels:
+  - name: major
+    color: C5000B
+  - name: minor
+    color: F1A60E
+  - name: patch
+    color: 870048
+  - name: skip-release
+    color: bf5416
+  - name: release
+    color: 007f70
+
+teams:
+  - name: bot
+    permission: admin
+  - name: developers
+    permission: maintain
