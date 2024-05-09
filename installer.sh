@@ -2,6 +2,9 @@
 
 set -euo pipefail
 
+RUN_SCRIPT_URL="https://raw.githubusercontent.com/cuttable/cuttable-installer/create-installer/run.sh"
+CUTTA_DIR="$HOME/.cutta"
+
 # Get the system's temporary directory on macOS
 temp_dir=$(mktemp -d)
 
@@ -10,8 +13,8 @@ INSTALLER="$temp_dir/$(uuidgen)"
 
 echo "Retreiving latest installer..."
 
-rm -rf "$HOME/.cutta"
+rm -rf "$CUTTA_DIR"
 
-mkdir -p "$HOME/.cutta"
+mkdir -p "$CUTTA_DIR"
 
-touch "$HOME/.cutta/run"
+curl --create-dirs -O --output-dir "$CUTTA_DIR/run.sh" $RUN_SCRIPT_URL
