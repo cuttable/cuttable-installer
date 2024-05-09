@@ -11,12 +11,12 @@ temp_dir=$(mktemp -d)
 # Create installer folder
 INSTALLER="$temp_dir/$(uuidgen)"
 
-echo "Retreiving latest installer..."
-
+echo "🧹 Cleaning $CUTTA_DIR..."
 rm -rf "$CUTTA_DIR"
 
 mkdir -p "$CUTTA_DIR"
 
-curl --create-dirs -O --output-dir "$CUTTA_DIR/run.sh" $RUN_SCRIPT_URL
+echo "🛜 Downloading installer..."
+curl -s --create-dirs -O --output-dir "$CUTTA_DIR" $RUN_SCRIPT_URL
 
 chmod +x "$CUTTA_DIR/run.sh"
